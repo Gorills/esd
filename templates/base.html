@@ -70,7 +70,7 @@
                 <img src="{% static 'images/header/maps.png' %}" alt="" class="header__icon">
                 <div class="header__column-wrap">
                     <p class="header__top">Москва, Ворошилова 16</p>
-                    <p class="header__bottom">Ежедневно с 9<sup>00</sup> до 21<sup>00</p>
+                    <p class="header__bottom">Ежедневно с 9<sup>00</sup> до 21<sup>00</sup></p>
                     
                 </div>
             </div>
@@ -99,7 +99,111 @@
     {% endblock %}
 
  
-</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__contacts">
+                    
+                        <div class="footer__logo-wrap">
+                            <img class="footer__logo" src="{% static 'images/logo.png' %}" alt="">
+
+                            <div class="footer__logo-right">
+                                <img src="{% static 'images/name.png' %}" alt="">
+                                <div class="footer__text-wrap">
+                                    <p class="footer__text">LPG массаж</p>
+                                    <p class="footer__text">RF Лифтинг</p>
+                                    <p class="footer__text">Кавитация</p>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="footer__row">
+                            <div class="footer__item">
+                                <img src="{% static 'images/map-icon.png' %}" alt="">
+                                <div class="footer__item-wrap">
+                                    <p class="footer__item-bold">Москва, Ворошилова 16</p>
+                                    <p class="footer__item-light">Ежедневно с 9<sup>00</sup> до 21<sup>00</sup></p>
+                                </div>
+                            </div>
+                            <div class="footer__item">
+                                <img src="{% static 'images/mail-icon.png' %}" alt="">
+                                <div class="footer__item-wrap">
+                                    <a href="mailto:feedback@eds.com" class="footer__item-bold">feedback@eds.com</a>
+                                    <p class="footer__item-light">Напишите нам</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="footer__row">
+                            <div class="footer__item">
+                                <img src="{% static 'images/phone-icon.png' %}" alt="">
+                                <div class="footer__item-wrap">
+                                    <a href="#" class="footer__item-bold">+7 (989) 023-48-49</a>
+                                    <p class="footer__item-light">Обратный звонок</p>
+                                </div>
+                            </div>
+                            <div class="footer__item footer__item--social">
+                                <a href="#" class="footer__link"><i class="fab fa-vk"></i></a>
+                                <a href="#" class="footer__link"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="footer__link"><i class="fab fa-telegram-plane"></i></a>
+                                <a href="#" class="footer__link"><i class="fab fa-facebook-f"></i></a>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <a href="#" class="btn btn__white">Обратный звонок</a>
+                    
+                   
+                   
+
+                
+                </div>
+                <div class="footer__map">
+                    <img src="{% static 'images/map.jpg' %}" alt="">
+                
+                </div>
+            
+            </div>
+
+
+            
+        
+        </div>
+    </div>
+</footer>
+
+            <div class="container">
+                <div class="footer__bottom">
+                
+                    <div class="footer__column">
+                        <p class="footer__copy">
+                        {% now "Y" %} — ООО "ESD" Все парава защищены.
+                        </p>
+
+                    </div>
+                    <div class="footer__column">
+                        <a href="#" class="footer__link-decor footer__copy">Политика конфиденциальности</a>
+                    
+                    </div>
+                    <div class="footer__column">
+                        <a href="#" class="footer__link-decor footer__copy">Пользовательское соглашение</a>
+                    
+                    </div>
+                    <div class="footer__column">
+                            <p class="footer__copy">
+                        Разработано — <a href="https://zimin-studio.ru/" class="footer__link-decor">ZiminStudio</a>
+                        </p>
+                    
+                    </div>
+                </div>
+            </div>
 
     <script src="{% static 'js/jquery.js' %}?v.1.0.3"></script>
     <script type="text/javascript" src="{% static 'js/slick.js' %}?v.1.0.3"></script>
