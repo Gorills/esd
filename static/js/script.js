@@ -245,8 +245,8 @@ for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
     /* Toggle between adding and removing the "active" class,
     to highlight the button that controls the panel */
-    this.classList.toggle("active");
-    $('.panel').removeClass('panel--active');
+    this.classList.toggle("active"); // $('.panel').removeClass('panel--active')
+
     /* Toggle between hiding and showing the active panel */
 
     var panel = this.nextElementSibling;
@@ -323,4 +323,8 @@ $('#ser9').click(function () {
   $('#item1, #item2, #item3, #item4, #item5, #item6, #item7, #item8').removeClass('services__item--active');
   $('#ser1, #ser2, #ser3, #ser4, #ser5, #ser6, #ser7, #ser8').removeClass('panel__item--active');
   $(this).addClass('panel__item--active');
+});
+$('.services__item-link').click(function (e) {
+  e.preventDefault();
+  $(this).children('.services__item-popup').toggleClass('services__item-popup--active');
 });
