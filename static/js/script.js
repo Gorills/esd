@@ -194,7 +194,7 @@ $('.equipment__slider').slick({
   nextArrow: "<div class='arrow-wrap next'><i class='fas fa-long-arrow-alt-right '></i></div>"
 });
 $('.equipment__nav').slick({
-  slidesToShow: 2,
+  slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.equipment__slider',
   infinite: true
