@@ -328,3 +328,10 @@ $('.services__item-link').click(function (e) {
   e.preventDefault();
   $(this).children('.services__item-popup').toggleClass('services__item-popup--active');
 });
+$('.popup__open').click(function (e) {
+  e.preventDefault();
+  $('.popup').addClass('popup--active');
+});
+$('.popup__closer, .popup__cancel').click(function () {
+  $('.popup').removeClass('popup--active');
+});
