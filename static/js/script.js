@@ -291,3 +291,25 @@ $('.price-popup, .price-popup__closer, .price-popup__cancel').click(function () 
   $('.price-popup').removeClass('price-popup--active');
   $('body').removeClass('overflow');
 });
+$('.popup-sogl__open').click(function (e) {
+  e.preventDefault();
+  $('.popup-sogl').addClass('popup-sogl--active');
+  $(".menu-btn").removeClass('menu-btn_active');
+  $(".header").removeClass('header--active');
+  $('body').addClass('overflow');
+});
+$('.popup-sogl, .popup-sogl__closer, .popup-sogl__cancel').click(function () {
+  $('.popup-sogl').removeClass('popup-sogl--active');
+  $('body').removeClass('overflow');
+});
+$('.politics__open').click(function (e) {
+  e.preventDefault();
+  $('.politics').addClass('politics--active');
+  $(".menu-btn").removeClass('menu-btn_active');
+  $(".header").removeClass('header--active');
+  $('body').addClass('overflow');
+});
+$('.politics, .politics__closer, .politics__cancel').click(function () {
+  $('.politics').removeClass('politics--active');
+  $('body').removeClass('overflow');
+});
