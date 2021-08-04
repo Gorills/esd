@@ -86,7 +86,7 @@
                 <img src="{% static 'images/header/wallet.png' %}" alt="" class="header__icon">
                 <div class="header__column-wrap">
                     <p class="header__top">Прайс на услуги салона</p>
-                    <a href="#" class="header__bottom header__link">Посмотреть стоимость</a>
+                    <a href="#" class="header__bottom header__link price-popup__open">Посмотреть стоимость</a>
                    
                 </div>
             </div>
@@ -219,31 +219,400 @@
     </div>
 </footer>
 
-            <div class="container">
-                <div class="footer__bottom">
-                
-                    <div class="footer__column">
-                        <p class="footer__copy">
-                        {% now "Y" %} — «ESD студия коррекции фигуры» Все парава защищены.
-                        </p>
+<div class="container">
+    <div class="footer__bottom">
+    
+        <div class="footer__column">
+            <p class="footer__copy">
+            {% now "Y" %} — «ESD студия коррекции фигуры» Все парава защищены.
+            </p>
 
-                    </div>
-                    <div class="footer__column">
-                        <a href="#" class="footer__link-decor footer__copy">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__column">
+            <a href="#" class="footer__link-decor footer__copy">Политика конфиденциальности</a>
+        
+        </div>
+        <div class="footer__column">
+            <a href="#" class="footer__link-decor footer__copy">Пользовательское соглашение</a>
+        
+        </div>
+        <div class="footer__column">
+                <p class="footer__copy">
+            Разработано — <a href="https://zimin-studio.ru/" class="footer__link-decor">ZiminStudio</a>
+            </p>
+        
+        </div>
+    </div>
+</div>
+
+
+
+<div class="price-popup">
+    <div class="price-popup__closer"></div>
+    
+        <div class="price-popup__inner">
+
+        
+            <img src="/static/images/cancel.png" alt="" class="price-popup__cancel">
+            <p class="price-popup__title">Услуги и цены</p>
+
+            <div class="price-popup__item">
+                <p class="price-popup__item-title">Аппаратный массаж</p>
+                
+                <p class="price-popup__subtitle">LPG 30 минут</p>
+                <ul class="price-popup__list">
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">Пробный сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1000 руб.</p>
+
                     
-                    </div>
-                    <div class="footer__column">
-                        <a href="#" class="footer__link-decor footer__copy">Пользовательское соглашение</a>
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">1 сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1200 руб.</p>
+
                     
-                    </div>
-                    <div class="footer__column">
-                            <p class="footer__copy">
-                        Разработано — <a href="https://zimin-studio.ru/" class="footer__link-decor">ZiminStudio</a>
-                        </p>
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">5 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">5000 руб.</p>
+
                     
-                    </div>
-                </div>
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">10 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">9000 руб.</p>
+
+                    
+                    </li>
+                
+                </ul>
+                <p class="price-popup__subtitle">LPG 40 минут</p>
+                <ul class="price-popup__list">
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">Пробный сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1200 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">1 сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1500 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">5 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">6000 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">10 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">11000 руб.</p>
+
+                    
+                    </li>
+                
+                </ul>
+                <p class="price-popup__subtitle">Кавитация 30 минут</p>
+                <p class="price-popup__desc">(одна зона)</p>
+                <ul class="price-popup__list">
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">Пробный сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1200 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">1 сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1500 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">5 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">6000 руб.</p>
+
+                    
+                    </li>
+                    
+                
+                </ul>
+                <p class="price-popup__subtitle">Кавитация 50 минут</p>
+                <p class="price-popup__desc">(три зоны)</p>
+                <ul class="price-popup__list">
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">Пробный сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1600 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">1 сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">2000 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">5 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">8000 руб.</p>
+
+                    
+                    </li>
+                    
+                
+                </ul>
+                <p class="price-popup__subtitle">RF лифтинг 15 минут</p>
+                <p class="price-popup__desc">(лицо)</p>
+                <ul class="price-popup__list">
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">Пробный сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1000 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">1 сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1100 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">5 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">5000 руб.</p>
+
+                    
+                    </li>
+                    
+                
+                </ul>
+                <p class="price-popup__subtitle">RF лифтинг 30 минут</p>
+                <p class="price-popup__desc">(лицо и тело)</p>
+                <ul class="price-popup__list">
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">Пробный сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1300 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">1 сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1500 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">5 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">6500 руб.</p>
+
+                    
+                    </li>
+                    
+                
+                </ul>
+                <p class="price-popup__subtitle">RF лифтинг 30 минут</p>
+                <p class="price-popup__desc">(тело)</p>
+                <ul class="price-popup__list">
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">Пробный сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1200 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">1 сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1400 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">5 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">6000 руб.</p>
+
+                    
+                    </li>
+                    
+                
+                </ul>
+                <p class="price-popup__subtitle">Прессотерапия + Инфракрасный нагрев 30 минут</p>
+                <p class="price-popup__desc">(тело)</p>
+                <ul class="price-popup__list">
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">Пробный сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1000 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">1 сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1300 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">5 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">5000 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">10 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">9000 руб.</p>
+
+                    
+                    </li>
+                    
+                
+                </ul>
+                <p class="price-popup__subtitle">Прессотерапия 30 минут</p>
+                <p class="price-popup__desc">(тело)</p>
+                <ul class="price-popup__list">
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">Пробный сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">900 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">1 сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">1100 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">5 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">4500 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">10 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">8000 руб.</p>
+
+                    
+                    </li>
+                    
+                
+                </ul>
+                
+
+
+
+            
             </div>
+
+            <div class="price-popup__item">
+                <p class="price-popup__item-title">Аппаратный массаж 2 в 1</p>
+                
+                <p class="price-popup__subtitle">LPG массаж + кавитация (одна зона) 60 минут</p>
+                <ul class="price-popup__list">
+                    
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">1 сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">2500 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">5 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">11000 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">10 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">20000 руб.</p>
+
+                    
+                    </li>
+                
+                </ul>
+            </div>
+            <div class="price-popup__item">
+                <p class="price-popup__item-title">Аппаратный массаж 3 в 1</p>
+                
+                <p class="price-popup__subtitle">LPG массаж + миостимуляция (тело) + кавитация (тело) 90 минут</p>
+                <ul class="price-popup__list">
+                    
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">1 сеанс</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">3500 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">5 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">16000 руб.</p>
+
+                    
+                    </li>
+                    <li class="price-popup__li">
+                        <p class="price-popup__list-title">10 сеансов</p>
+                        <p class="price-popup__list-decor"></p>
+                        <p class="price-popup__list-price">30000 руб.</p>
+
+                    
+                    </li>
+                
+                </ul>
+            </div>
+
+
+
+            
+            </div>
+        </div>
+    
+</div>
+
+<div class="popup-sogl">
+    <div class="popup-sogl__closer"></div>
+    
+    <div class="popup-sogl__inner">
+        <p class="popup-sogl__title">Пользовательское Соглашение</p>
+
+    
+    </div>
+</div>
+
+
 
     <script src="{% static 'js/jquery.js' %}?v.1.0.3"></script>
     <script type="text/javascript" src="{% static 'js/slick.js' %}?v.1.0.3"></script>
